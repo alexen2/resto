@@ -1,10 +1,10 @@
-form(action = "", method = "post", id = "form-contact")
+form(action = "/", method = "post", id = "form-contact")
 	div.form-contact
 		div.form-contact__group
 			label(for = "contact-name") Your Name
 
 			div.form-contact__field
-				input.form-contact__control(type = "text", name = "name", id = "name")
+				input.form-contact__control(type = "text", name = "contact-name", id = "contact-name")
 
 		div.form-contact__group
 			label(for = "contact-email") Your Email
@@ -20,4 +20,4 @@ form(action = "", method = "post", id = "form-contact")
 
 		div.form-reserv__group
 			div.form-reserv__field
-				input.form-reserv__control(type = "submit", name = "submit", id = "submit", value = "Send Message")
+				input.form-reserv__control(type = "submit", name = "submit", value = "Send Message")
