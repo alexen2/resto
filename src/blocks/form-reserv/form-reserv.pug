@@ -1,0 +1,56 @@
+form(action = "", method = "post", id = "form-reserv")
+	div.form-reserv.p-animate
+		div.form-reserv__group
+			label(for = "people") How Many People
+
+			div.form-reserv__field
+				i.fa.fa-chevron-down(aria-hidden = "true")
+
+				select.form-reserv__control(name="people", id="people")
+					option(value = "#") 1 people
+					option(value = "#") 2 people
+					option(value = "#") 3 people
+
+		div.form-reserv__group
+			label(for = "date") Date
+
+			div.form-reserv__field
+				i.fa.fa-calendar-o(aria-hidden = "true")
+
+				input.form-reserv__control(type = "text", name = "date", id = "date")
+
+		div.form-reserv__group
+			label(for = "time") Time
+
+			div.form-reserv__field
+				i.fa.fa-clock-o(aria-hidden = "true")
+
+				input.form-reserv__control(type = "text", name = "time", id = "time")
+
+		div.form-reserv__group
+			label(for = "name") Name
+
+			div.form-reserv__field
+				i.fa.fa-user(aria-hidden = "true")
+
+				input.form-reserv__control(type = "text", name = "name", id = "name", placeholder = "Your full name")
+
+		div.form-reserv__group
+			label(for = "email") Email
+
+			div.form-reserv__field
+				i.fa.fa-envelope(aria-hidden = "true")
+
+				input.form-reserv__control(type = "text", name = "email", id = "email", placeholder = "Your email address")
+
+		div.form-reserv__group
+			label(for = "phone") Phone
+
+			div.form-reserv__field
+				i.fa.fa-phone(aria-hidden = "true")
+
+				input.form-reserv__control(type = "text", name = "phone", id = "phone", placeholder = "Your phone")
+
+		div.form-reserv__group
+			div.form-reserv__field
+				input.form-reserv__control(type = "submit", name = "submit", id = "submit", value = "Submit")

@@ -1,0 +1,24 @@
+.site-header{	
+	min-height: 50px;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	transition: .3s all;	
+	background-color: #fff;
+	z-index: 999;
+}
+.site-header__in{
+	display: flex;
+	justify-content: space-between;
+}
+
+@media(min-width: 768px){
+	.site-header{		
+		background: none;
+	}
+	.site-header_scrolled{
+		background-color: #fff;
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,.09);
+	}
+}

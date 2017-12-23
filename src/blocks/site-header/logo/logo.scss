@@ -1,0 +1,32 @@
+.logo{
+	position: relative;
+	width: 117px;
+    height: 40px; 
+    margin-top: 6px;
+    overflow: hidden;
+}
+.logo img{
+	position: absolute;
+	left: 0;
+	top: -40px;
+}
+
+@media(min-width: 768px){
+	.logo{
+		margin-top: 40px;
+		transition: .3s all;
+	}
+	.logo img{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.site-header_scrolled .logo{
+		margin-top: 10px;
+	}
+	.site-header_scrolled .logo img{
+		position: absolute;
+		left: 0;
+		top: -40px;
+	}
+}

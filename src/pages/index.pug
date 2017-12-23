@@ -1,0 +1,85 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+
+		title Resto
+
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script", rel="stylesheet")
+		link(href="css/normalize.css" rel="stylesheet")
+		link(href="css/font-awesome.min.css" rel="stylesheet")
+		link(href="css/animate.min.css" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+
+		<!--[if lt IE 9]>
+		script(src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js")
+		script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
+		<![endif]-->
+	body
+		include ../blocks/site-header/site-header.pug
+
+		section
+			include ../blocks/slider/slider.pug
+
+		section.block.block-white
+			div.container
+				include ../blocks/our-store/our-store.pug
+
+		section.block.bg-1
+			div.container
+				div.block-bg__title
+					include ../blocks/0-independent-blocks/title-double/title-double.pug
+					+title-double('h2', 'Discover', 'Our Specialties')(class="title-double_white")
+
+		section.block
+			div.container.container-no-p
+				include ../blocks/menu-block/menu-block.pug
+
+		section.block.bg-2
+			div.container
+				div.block-bg__title
+					include ../blocks/0-independent-blocks/title-double/title-double.pug
+					+title-double('h2', 'Discover', 'Our Menu')(class="title-double_white")
+
+		section.block.block-white
+			div.container
+				include ../blocks/menu-list/menu-list.pug
+
+		section.block.bg-3
+			div.container
+				div.block-bg__title
+					include ../blocks/0-independent-blocks/title-double/title-double.pug
+					+title-double('h2', 'Booking', 'Reserve A Table')(class="title-double_white")
+
+		section.block.block-white
+			div.container
+				include ../blocks/form-reserv/form-reserv.pug
+
+		section.block.bg-2
+			div.container
+				div.block-bg__title
+					include ../blocks/0-independent-blocks/title-double/title-double.pug
+					+title-double('h2', 'Upcoming', 'Our Events')(class="title-double_white")
+
+		section.block
+			div.container
+				include ../blocks/news/news.pug
+
+		section.block.block-white
+			div.container
+				include ../blocks/contact/contact.pug
+
+		section.block.block-black
+			div.container
+				include ../blocks/bottom/bottom.pug
+
+		footer.site-footer
+			div.container
+				include ../blocks/footer/footer.pug
+
+		script(src="js/jquery-3.2.1.min.js")
+		script(src="js/jquery.waypoints.min.js")
+		script(src="js/animate.js")
+		script(src="js/script.js")

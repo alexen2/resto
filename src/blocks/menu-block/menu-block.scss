@@ -1,0 +1,95 @@
+.menu-block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 40px;
+    background-color: $background-color-2;
+    margin-top: -14%;
+    margin-bottom: -14%;
+    z-index: 2;
+    position: relative;
+}
+.menu-block__item{
+    background-color: $background-color-2;
+}
+.menu-block__img{
+    background-size: cover;
+    height: 200px;
+}
+.menu-block__content{
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.menu-block__title{
+    margin: 0 0 10px 0;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $text-color-2;
+}
+.menu-block__price{
+    font-size: 20px;
+    color: $text-color-4;
+    margin-bottom: 0;
+}
+@media(min-width: 768px){
+    .menu-block{
+        background: none; 
+        margin-top: -9%;
+        margin-bottom: -6%;
+    }
+    .menu-block__item{
+        display: flex;
+        margin-bottom: 15px;
+    }
+    .menu-block__img{
+        width: 50%;
+        height: auto;
+    }
+    .menu-block__content{
+        width: 50%;
+        position: relative;
+    }
+    .menu-block__content::before {
+        right: 100%;
+        border: solid transparent;
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-color: rgba(255, 225, 255, 0);
+        border-right-color: #fff;
+        border-width: 12px;
+        z-index: 2;
+        top: 15%;
+        content: " ";        
+        margin-top: -12px;
+        pointer-events: none;
+    }
+}
+@media(min-width: 992px){
+    .menu-block{
+        flex-direction: row; 
+        flex-wrap: wrap;
+        margin-top: -14%;
+        margin-bottom: -14%;
+        padding-top: 0;
+    }
+    .menu-block__item{
+        width: 50%;
+        margin-bottom: 0;
+    }
+    .menu-block__item.menu-block__item_reverse{
+        flex-direction: row-reverse;
+    }
+    .menu-block__item_reverse .menu-block__content::before{
+        left: 100%;
+        border: solid transparent;
+        width: 0;
+        position: absolute;
+        border-color: rgba(255, 225, 255, 0);
+        border-left-color: #fff;
+        border-width: 12px;
+    }
+}

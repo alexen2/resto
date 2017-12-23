@@ -1,0 +1,23 @@
+form(action = "", method = "post", id = "form-contact")
+	div.form-contact
+		div.form-contact__group
+			label(for = "contact-name") Your Name
+
+			div.form-contact__field
+				input.form-contact__control(type = "text", name = "name", id = "name")
+
+		div.form-contact__group
+			label(for = "contact-email") Your Email
+
+			div.form-contact__field
+				input.form-contact__control(type = "text", name = "contact-email", id = "contact-email")
+
+		div.form-contact__group
+			label(for = "contact-msg") Your Message
+
+			div.form-contact__field
+				textarea.form-contact__control(name = "contact-msg", id = "contact-msg", cols="30", rows="10")
+
+		div.form-reserv__group
+			div.form-reserv__field
+				input.form-reserv__control(type = "submit", name = "submit", id = "submit", value = "Send Message")

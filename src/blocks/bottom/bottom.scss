@@ -1,0 +1,35 @@
+.bottom{
+	display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: $text-color-5;
+}
+.bottom__title{
+	font-size: 18px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: $text-color-3;
+    font-weight: normal;
+}
+.bottom__text{
+	display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.bottom__text p{
+	padding-right: 30px;
+}
+
+@media(min-width: 768px){
+    .bottom{
+        flex-direction: row;
+    }
+    .bottom__block{    	
+        width: 50%;         
+    }
+}
+@media(min-width: 992px){
+    .bottom__text{
+		flex-direction: row;
+    }
+}
